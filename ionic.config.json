@@ -1,0 +1,7 @@
+{
+  "name": "PB-HUB",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
