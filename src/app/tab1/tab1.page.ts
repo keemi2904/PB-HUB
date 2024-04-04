@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonSearchbar, IonGrid, IonRow, IonCol, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCardSubtitle, IonButton, IonButtons, IonIcon } from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { addIcons } from 'ionicons';
-import { cartOutline } from 'ionicons/icons';
+import { cartOutline, informationCircleOutline, chatboxEllipsesOutline } from 'ionicons/icons';
 
 
 @Component({
@@ -14,6 +14,6 @@ import { cartOutline } from 'ionicons/icons';
 })
 export class Tab1Page {
   constructor() {
-    addIcons({ cartOutline });
+    addIcons({ cartOutline, informationCircleOutline, chatboxEllipsesOutline});
   }
 }
