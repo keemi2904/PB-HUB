@@ -1,8 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      MY PRODUCT
     </ion-title>
+    <a href="chat" style="text-decoration: none; color: inherit; position: absolute; top: 0; right: 0;">
+      <ion-icon slot="end" name="add-circle-outline" style="height: 50px; width: 50px;"></ion-icon>
+    </a>
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +16,45 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card style="height: 380px; width: 300px;">
+    <img src="https://i.dailymail.co.uk/i/pix/2016/02/25/14/318CD5FC00000578-0-image-a-131_1456411156499.jpg" style="height: 170px; width: 300px;" />
+  <ion-card-header>
+    <ion-card-title>Homemade Salad</ion-card-title>
+    <ion-card-title>Price: $2.5</ion-card-title>
+    <ion-card-title>Quantity: 5</ion-card-title>
+    <ion-button>REMOVE</ion-button>
+    <ion-button>UPDATE</ion-button>
+  </ion-card-header>
+</ion-card>
+
+
+  <!-- ------------------------------------------------------------------------------------------------------  -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        MY REVENUE
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card style="height: 270px; width: 300px;">
+    <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/06/THUMB-LINK-2020-2.jpg" style="height: 170px; width: 300px;" />
+  <ion-card-header>
+    <ion-card-title>Mom's Spaghetti</ion-card-title>
+    <ion-card-title>Made: $15</ion-card-title>
+  </ion-card-header>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>
+      Total Made: $15
+    </ion-card-title>
+  </ion-card-header>
+</ion-card>
+
+
+
+
+
 </ion-content>
