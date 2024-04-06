@@ -3,7 +3,7 @@
     <ion-title>
       MY PRODUCT
     </ion-title>
-    <a href="chat" style="text-decoration: none; color: inherit; position: absolute; top: 0; right: 0;">
+    <a href="add" style="text-decoration: none; color: inherit; position: absolute; top: 0; right: 0;">
       <ion-icon slot="end" name="add-circle-outline" style="height: 50px; width: 50px;"></ion-icon>
     </a>
   </ion-toolbar>
@@ -16,7 +16,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card style="height: 380px; width: 300px;">
+  <ion-card style="height: 380px; width: 300px;" *ngIf="show">
     <img src="https://i.dailymail.co.uk/i/pix/2016/02/25/14/318CD5FC00000578-0-image-a-131_1456411156499.jpg" style="height: 170px; width: 300px;" />
   <ion-card-header>
     <ion-card-title>Homemade Salad</ion-card-title>
