@@ -15,14 +15,59 @@
 
   
 
-  <ion-card *ngIf="show">
+  <ion-card *ngIf="show" style="height: 400px; width: 300px;">
+    <img src="https://grapeejapan.com/wp-content/uploads/sub1-36.png" style="height: 170px; width: 300px;"/>
     <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-title>Not Burger King $2.5</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-    <ion-button (click)="show = false">Remove from cart</ion-button>
+    
+      <ion-card-title>Price: $2.5</ion-card-title>
+      <ion-card-title>Quantity: {{ quantity }}</ion-card-title>
+      <div style="display: flex; align-items: center;">
+        <ion-button (click)="decreaseQuantity()">-</ion-button>
+        <h3 style="margin: 0 10px;">Quantity Left: {{ maxQuantity - quantity }}</h3>
+        <ion-button (click)="increaseQuantity()">+</ion-button>
+      </div>
+      <ion-card-title>SubTotal: ${{ subtotal.toFixed(2) }}</ion-card-title>
+    
+    <ion-button (click)="show = false">REMOVE FROM CART</ion-button>
+</ion-card>
 
-  </ion-card>
+<ion-card style="height: 120px; width: 95%;">
+  <ion-card-title>Discount Code: DWDTO8</ion-card-title>
+  <ion-card-title>Discount: 20%</ion-card-title>
+  <ion-card-title>GrandTotal: ${{ grandTotal.toFixed(2) }}</ion-card-title>
+  <ion-button>CHECKOUT</ion-button>
+</ion-card>    
 </ion-content>
+
+<!-- <script>
+  var price = 2.5;
+  var quantity = 0;
+  var subtotal = 0;
+  var discount = 0.2;
+  var maxQuantity = 5;
+
+  document.getElementById('minus').addEventListener('click', function() {
+      if(quantity > 0) {
+          quantity--;
+          subtotal -= price;
+      }
+      updateDisplay();
+  });
+
+  document.getElementById('plus').addEventListener('click', function() {
+      if(quantity < maxQuantity) {
+          quantity++;
+          subtotal += price;
+      }
+      updateDisplay();
+  });
+
+  function updateDisplay() {
+      document.getElementById('quantity').innerText = quantity;
+      document.getElementById('subtotal').innerText = subtotal.toFixed(2);
+      document.getElementById('grandtotal').innerText = (subtotal * (1 - discount)).toFixed(2);
+      document.getElementById('quantity-left').innerText = maxQuantity - quantity;
+  }
+</script> -->

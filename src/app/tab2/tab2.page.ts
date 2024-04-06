@@ -14,10 +14,36 @@ import { CommonModule } from '@angular/common';
 })
 export class Tab2Page implements OnInit {
   show = true;
+  price = 2.5;
+  quantity = 0;
+  subtotal = 0;
+  grandTotal = 0;
+  maxQuantity = 5;
+  discount = 0.2; // 20% discount
 
   constructor(private appService: AppService) { }
 
   ngOnInit() {
     this.appService.show$.subscribe(show => this.show = show);
+  }
+
+  decreaseQuantity() {
+    if (this.quantity > 0) {
+      this.quantity--;
+      this.subtotal -= this.price;
+      this.updateGrandTotal();
+    }
+  }
+
+  increaseQuantity() {
+    if (this.quantity < this.maxQuantity) {
+      this.quantity++;
+      this.subtotal += this.price;
+      this.updateGrandTotal();
+    }
+  }
+
+  updateGrandTotal() {
+    this.grandTotal = this.subtotal * (1 - this.discount);
   }
 }
