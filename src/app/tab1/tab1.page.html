@@ -56,8 +56,8 @@
         
           <ion-card-content>
             Savor the ultimate burger experience
-            <ion-button>
-              Add To Cart
+            <ion-button (click)="onButtonClick()">
+              {{buttonText}}
               <ion-icon slot="end" name="cart-outline"></ion-icon>
             </ion-button> 
           </ion-card-content>         

@@ -16,4 +16,10 @@ export class Tab1Page {
   constructor() {
     addIcons({ cartOutline, informationCircleOutline, chatboxEllipsesOutline});
   }
+
+  buttonText = 'Add To Cart';
+
+  onButtonClick() {
+    this.buttonText = 'Added To Cart';
+  }
 }
