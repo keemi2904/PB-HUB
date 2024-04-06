@@ -3,6 +3,7 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonSearchbar, IonGrid, Ion
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { addIcons } from 'ionicons';
 import { cartOutline, informationCircleOutline, chatboxEllipsesOutline } from 'ionicons/icons';
+import { AppService } from '../app.service';
 
 
 @Component({
@@ -13,7 +14,7 @@ import { cartOutline, informationCircleOutline, chatboxEllipsesOutline } from 'i
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonSearchbar, IonGrid, IonRow, IonCol, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCardSubtitle, IonButton, IonButtons, IonIcon],
 })
 export class Tab1Page {
-  constructor() {
+  constructor(private appService: AppService) {
     addIcons({ cartOutline, informationCircleOutline, chatboxEllipsesOutline});
   }
 
@@ -21,5 +22,6 @@ export class Tab1Page {
 
   onButtonClick() {
     this.buttonText = 'Added To Cart';
+    this.appService.toggleShow();
   }
 }

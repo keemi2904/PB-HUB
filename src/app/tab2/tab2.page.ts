@@ -1,16 +1,23 @@
-import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
+import { Component, OnInit, } from '@angular/core';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent} from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
+import { AppService } from '../app.service';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent]
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, CommonModule],
 })
-export class Tab2Page {
+export class Tab2Page implements OnInit {
+  show = true;
 
-  constructor() {}
+  constructor(private appService: AppService) { }
 
+  ngOnInit() {
+    this.appService.show$.subscribe(show => this.show = show);
+  }
 }
