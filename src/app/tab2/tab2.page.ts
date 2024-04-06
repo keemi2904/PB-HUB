@@ -1,8 +1,10 @@
 import { Component, OnInit, } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton, IonButtons} from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonButton, IonButtons, IonIcon, IonSearchbar} from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { AppService } from '../app.service';
 import { CommonModule } from '@angular/common';
+import { addIcons } from 'ionicons';
+import { cartOutline, informationCircleOutline, chatboxEllipsesOutline } from 'ionicons/icons';
 
 
 @Component({
@@ -10,7 +12,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, CommonModule, IonButton, IonButtons],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, CommonModule, IonButton, IonButtons, IonIcon, IonSearchbar],
 })
 export class Tab2Page implements OnInit {
   show = true;
@@ -21,7 +23,9 @@ export class Tab2Page implements OnInit {
   maxQuantity = 5;
   discount = 0.2; // 20% discount
 
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService) {
+    addIcons({ cartOutline, informationCircleOutline, chatboxEllipsesOutline});
+  }
 
   ngOnInit() {
     this.appService.show$.subscribe(show => this.show = show);
