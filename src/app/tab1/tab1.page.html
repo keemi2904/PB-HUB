@@ -14,10 +14,16 @@
     </ion-title>
   </ion-toolbar>
   <ion-toolbar style="background-color: rgb(255, 255, 255);">
-    <ion-icon slot="start" name="information-circle-outline" style="height: 50px; width: 50px;"></ion-icon>
-    <ion-icon slot="end" name="chatbox-ellipses-outline" style="height: 50px; width: 50px;"></ion-icon>
-  </ion-toolbar>
-</ion-header>
+    <!-- <ion-icon slot="start" name="information-circle-outline" style="height: 50px; width: 50px;"></ion-icon>
+    <ion-icon slot="end" name="chatbox-ellipses-outline" style="height: 50px; width: 50px;"></ion-icon> -->
+    <a href="about" style="text-decoration: none; color: inherit;">
+      <ion-icon slot="start" name="information-circle-outline" style="height: 50px; width: 50px;"></ion-icon>
+    </a>
+    <a href="#" style="text-decoration: none; color: inherit; position: absolute; top: 0; right: 0;">
+      <ion-icon slot="end" name="chatbox-ellipses-outline" style="height: 50px; width: 50px;"></ion-icon>
+    </a>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
