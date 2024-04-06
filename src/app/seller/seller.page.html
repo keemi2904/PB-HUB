@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<ion-header [translucent]="true"> 
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+   </ion-buttons>
+    <div style="display: flex; align-items: center;">
+      <ion-title></ion-title>
+      <a href="chat" style="text-decoration: none; color: inherit; position: absolute; top: 0; right: 0;">
+        <ion-icon slot="end" name="chatbox-ellipses-outline" style="height: 50px; width: 50px;"></ion-icon>
+      </a>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">seller</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <!-- <img src="https://ionicframework.com/docs/img/demos/card-media.png" style="height: 400px; width: 600px;" /> -->
+    <!-- <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header> -->
+  
+    <ion-card-content class="ion-text-center">
+      <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/1200px-Flag_of_Brunei.svg.png" style="max-width: 100%; height: auto;" /> -->
+      <img href="profile" src="https://akm-img-a-in.tosshub.com/sites/visualstory/wp/2023/07/Messi-30.jpg" style="height: 80px; width:80px; border-radius: 50%; object-fit: cover;">
+      <br>
+      <h2 style="color:rgb(255, 255, 255);">MESSI CUISSON</h2>
+      <br>
+      <h4 style="color:rgb(255, 255, 255);">Hi, my name is Messi, and I am the owner of Messi Cuisson, a culinary haven where passion and flavor converge. At Messi Cuisson, we pride ourselves on crafting exquisite dishes that tantalize the taste buds and create lasting memories. Our team is dedicated to delivering exceptional service and creating an ambiance that invites you to indulge in the finer things in life. Whether you're joining us for a casual lunch or a special celebration, we strive to make every dining experience extraordinary. Welcome to Messi Cuisson, where culinary artistry meets unparalleled hospitality.</h4>
+      
+    </ion-card-content>
+  </ion-card>
+
+  
+  <h1 style="display: inline-block;">&nbsp;Products</h1>
+  <ion-card style="height: 350px; width: 300px;">
+    <img src="https://grapeejapan.com/wp-content/uploads/sub1-36.png" style="height: 170px; width: 300px;"/>
+    <ion-card-header>
+      <ion-card-title>Not Burger King</ion-card-title>
+      <ion-card-subtitle>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+      </ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <h4>“この寿司は非常に高品質で絶品です” - anonymous samurai</h4>
+    </ion-card-content>         
+  </ion-card>
+
+</ion-content>
