@@ -16,6 +16,7 @@ export class Tab3Page {
   price: number = 2.5;
   quantity: number = 5;
   buttonText: string = 'UPDATE';
+  removeButtonText: string = 'REMOVE';
 
   constructor() {
     addIcons({ cartOutline, informationCircleOutline, chatboxEllipsesOutline, addCircleOutline});
@@ -26,5 +27,12 @@ export class Tab3Page {
     this.price = 3;
     this.quantity = 10;
     this.buttonText = 'UPDATED';
+  }
+
+  removeItem() {
+    this.saladName = 'Item is removed';
+    this.price = 0;
+    this.quantity = 0;
+    this.removeButtonText = 'REMOVED';
   }
 }
