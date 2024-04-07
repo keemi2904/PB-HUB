@@ -12,7 +12,19 @@ import { cartOutline, informationCircleOutline, chatboxEllipsesOutline, addCircl
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonIcon, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonButton, IonButtons],
 })
 export class Tab3Page {
+  saladName: string = 'Homemade Salad';
+  price: number = 2.5;
+  quantity: number = 5;
+  buttonText: string = 'UPDATE';
+
   constructor() {
     addIcons({ cartOutline, informationCircleOutline, chatboxEllipsesOutline, addCircleOutline});
+  }
+
+  updateItem() {
+    this.saladName = 'Ronaldo Salad';
+    this.price = 3;
+    this.quantity = 10;
+    this.buttonText = 'UPDATED';
   }
 }

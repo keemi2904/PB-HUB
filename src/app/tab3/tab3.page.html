@@ -16,14 +16,14 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card style="height: 380px; width: 300px;" *ngIf="show">
+  <ion-card style="height: 380px; width: 300px;">
     <img src="https://i.dailymail.co.uk/i/pix/2016/02/25/14/318CD5FC00000578-0-image-a-131_1456411156499.jpg" style="height: 170px; width: 300px;" />
   <ion-card-header>
-    <ion-card-title>Homemade Salad</ion-card-title>
-    <ion-card-title>Price: $2.5</ion-card-title>
-    <ion-card-title>Quantity: 5</ion-card-title>
+    <ion-card-title>{{ saladName }}</ion-card-title>
+    <ion-card-title>Price: ${{ price }}</ion-card-title>
+    <ion-card-title>Quantity: {{ quantity }}</ion-card-title>
     <ion-button>REMOVE</ion-button>
-    <ion-button>UPDATE</ion-button>
+    <ion-button (click)="updateItem()">{{ buttonText }}</ion-button>
   </ion-card-header>
 </ion-card>
 
