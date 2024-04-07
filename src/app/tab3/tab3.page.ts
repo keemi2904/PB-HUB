@@ -35,4 +35,10 @@ export class Tab3Page {
     this.quantity = 0;
     this.removeButtonText = 'REMOVED';
   }
+
+  addItem() {
+    this.saladName = 'Homemade Salad';
+    this.price = 2.5;
+    this.quantity = 5;
+  }
 }
