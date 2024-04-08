@@ -39,10 +39,23 @@
 
 **Application Android Deployement Step (if you want to deploy)**
 
-1. Android Studio:
+1. What is needed:
 
-- Install Android Studio. Detailed installation instructions are on Android's developer site
+- node.js and npm
+- ionic project
+- android studio
+- android device/phone
 
-2. Set up your Android Studio and run it
+2. connect your phone with usb cable
 
-3. h
+3. build ionic app
+
+- open terminal and go to your ionic project
+- run `ionic build android`
+- the code creates a build for android
+
+4. run `ionic capacitor copy android`
+
+5. run `ionic capacitor open android`
+
+6. run `ionic capacitor run android`
