@@ -29,7 +29,7 @@
   - View and adjust the items you've added.
   - Customize quantities to see dynamic price changes.
   - When ready, proceed to checkout.
-  - In the checkout, select "Add to Cart" to finalize your purchase.
+  - In the checkout, select "Add screenshot" to finalize your purchase.
 
 - **Seller Function Page**
   - This page displays the seller's products and revenue.
