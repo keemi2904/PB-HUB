@@ -36,3 +36,28 @@
   - Remove items by selecting them; the price and sales will be updated accordingly.
   - Use the plus button to add items; the status will change to "Added".
   - Return to update as needed.
+
+**Application Android Deployement Step (if you want to deploy)**
+
+1. Android Studio:
+
+- Install Android Studio. Detailed installation instructions are on Android's developer site
+
+2. Adding SDK Packages:
+
+- After installing the Android SDK, you must also install the packages for whatever API level you wish to target. It is recommended that you install the highest SDK version that your version of cordova-android supports.
+
+3. Just click next all the way until you reach licenses
+
+4. For each license, make sure to choose “Accept” (reminder: This initial setup, would required another additional 1.3GB+ download)
+
+5. Adding SDK Packages
+
+6. Open Tools > Android > Android SDK Manager OR Configure > SDK Manager and make sure the following are installed:
+
+- Android Platform SDK for your targeted version of Android
+- Android SDK build-tools version 26.1.0 or higher
+- Android Support Repository (found under "Extras")
+- Android SDK Platforms API 21 or higher
+
+7. h
